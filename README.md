@@ -6,7 +6,7 @@
 <p>I was tired of doing it myself</p>
 
 # What kind of improvements are you planning on making?
-<p>HTML5 element support (if you want to use html you have to put it through <a href="https://www.urlencoder.org/">this</a> first)</p>
+<p>HTML5 element support</p>
 
 # How do I use it?
 <p>If you want to use this just go <a href="https://soaringgecko.github.io/RunJavaScriptOnKeyPress/Pages/">here</a> and follow the instructions</p>
