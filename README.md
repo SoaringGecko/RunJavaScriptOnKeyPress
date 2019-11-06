@@ -2,7 +2,7 @@
 <p>Automatically generates a thing to run JavaScript on a specific key-press</p>
 
 # Why I made this
-<p>I was tired of doinf it myself</p>
+<p>I was tired of doing it myself</p>
 
 # What kind of improvements are you planning on making?
 <p>HTML5 element support</p>
