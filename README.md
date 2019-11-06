@@ -1,3 +1,4 @@
+<link rel="shortcut icon" type="image/png" href="/RunJavaScriptOnKeyPress/one-keyboard-js.png">
 <link rel="stylesheet" href="/RunJavaScriptOnKeyPress/assets/css/style.css?v=45e0bbafbd04e5eb3875e817bff9edf41552c081">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <p>Automatically generates a thing to run JavaScript on a specific key-press</p>
