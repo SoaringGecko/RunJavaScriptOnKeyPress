@@ -24,4 +24,4 @@ window.location.href = "http://sgr.rf.gd";
 &lt;/script&gt;</pre></p>
 
 # Redirect
-<p><a href="http://jsonkeypress.rf.gd/">JsOnKeyPress.rf.gd</a></p>
+<p><a href="http://jsonkeypress.rf.gd/">JsOnKeyPress.rf.gd</a> redirects to the page used to generate the script</p>
