@@ -5,7 +5,7 @@
 <p>I was tired of doinf it myself</p>
 
 # What kind of improvements are you planning on making?
-<p>I don't know yet</p>
+<p>HTML5 element support</p>
 
 # How do I use it?
 <p>If you want to use this just go <a href="https://soaringgecko.github.io/RunJavaScriptOnKeyPress/Pages/">here</a> and follow the instructions</p>
