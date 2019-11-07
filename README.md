@@ -6,9 +6,6 @@
 # Why I made this
 <p>I was tired of doing it myself</p>
 
-# What kind of improvements are you planning on making?
-<p>HTML5 element support</p>
-
 # How do I use it?
 <p>If you want to use this just go <a href="https://soaringgecko.github.io/RunJavaScriptOnKeyPress/Pages/">here</a> and follow the instructions</p>
 
@@ -23,6 +20,9 @@ window.location.href = "http://sgr.rf.gd";
    }
 }
 &lt;/script&gt;</pre></p>
+
+# What kind of improvements are you planning on making?
+<p>HTML5 element support</p><p>Add a feature where it can auto generate more than one</p>
 
 # Redirect
 <p><a href="http://jsonkeypress.rf.gd/">JsOnKeyPress.rf.gd</a> redirects to the page used to generate the script</p>
