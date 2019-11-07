@@ -13,10 +13,10 @@
 <p>If you want to use more then one on a page you will have to stylelive it like this: <pre>&lt;script&gt;
 window.onkeypress = function(event) {
    if (event.keyCode == 56) {
-window.location.href = "http://8k.rf.gd";
+// Your JS here
    }
    if (event.keyCode == 115) {
-window.location.href = "http://sgr.rf.gd";
+// Your JS here
    }
 }
 &lt;/script&gt;</pre></p>
