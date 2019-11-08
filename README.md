@@ -22,7 +22,8 @@ window.onkeypress = function(event) {
 &lt;/script&gt;</pre></p>
 
 # What kind of improvements are you planning on making?
-<p>HTML5 element support</p><p>Add a feature where it can auto generate more than one</p>
+<p>HTML5 element support</p>
+<p>Add a feature where it can auto generate more than three</p>
 
 # Redirect
 <p><a href="http://jsonkeypress.rf.gd/">JsOnKeyPress.rf.gd</a> redirects to the page used to generate the script</p>
