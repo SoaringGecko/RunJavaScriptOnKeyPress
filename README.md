@@ -30,16 +30,3 @@ window.onkeypress = function(event) {
 
 # Redirect
 <p><a href="http://jsonkeypress.rf.gd/">JsOnKeyPress.rf.gd</a> redirects to the page used to generate the script</p>
-
-<style>
-/*
-::selection {
-  background: #b5e853; /* WebKit/Blink Browsers */
-  color: #020202;
-}
-::-moz-selection {
-  background: #b5e853; /* Gecko Browsers */
-  color: #020202;
-}
-*\
-</style>
