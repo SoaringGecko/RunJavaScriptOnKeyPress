@@ -5,7 +5,6 @@
 <title>Run JavaScript on Key-Press</title>
 <link rel="shortcut icon" type="image/png" href="/RunJavaScriptOnKeyPress/one-keyboard-js.png">
 <link rel="stylesheet" href="/RunJavaScriptOnKeyPress/assets/css/style.css?v=45e0bbafbd04e5eb3875e817bff9edf41552c081">
-<link rel="stylecheet" href="https://soaringgecko.github.io/RunJavaScriptOnKeyPress/highlight.css">
 <link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
 <link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -79,6 +78,16 @@ window.onkeypress = function(event) {
 </p>
 <hr/>
 <p><a href="https://soaringgecko.github.io/RunJavaScriptOnKeyPress">Main page</a></p>
+<style>
+::selection {
+  background: #b5e853; /* WebKit/Blink Browsers */
+  color: #020202;
+}
+::-moz-selection {
+  background: #b5e853; /* Gecko Browsers */
+  color: #020202;
+}
+</style>
 <script>
 function myFunction(event) {
   var x = event.which || event.keyCode;
