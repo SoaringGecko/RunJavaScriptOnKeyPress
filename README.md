@@ -9,6 +9,9 @@
 # How do I use it?
 <p>If you want to use this just go <a href="https://soaringgecko.github.io/RunJavaScriptOnKeyPress/Pages/">here</a> and follow the instructions</p>
 
+# Updates
+<p><b>2.0 —</b> It can now  generate 3</p>
+
 # How do I put more then one on a page
 <p>If you want to use more then one on a page you will have to stylelive it like this: <pre>&lt;script&gt;
 window.onkeypress = function(event) {
