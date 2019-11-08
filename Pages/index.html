@@ -79,6 +79,16 @@ window.onkeypress = function(event) {
 </p>
 <hr/>
 <p><a href="https://soaringgecko.github.io/RunJavaScriptOnKeyPress">Main page</a></p>
+<style>
+::selection {
+  background: #b5e853; /* WebKit/Blink Browsers */
+  color: #020202;
+}
+::-moz-selection {
+  background: #b5e853; /* Gecko Browsers */
+  color: #020202;
+}
+</style>
 <script>
 function myFunction(event) {
   var x = event.which || event.keyCode;
