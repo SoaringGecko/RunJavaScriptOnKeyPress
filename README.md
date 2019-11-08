@@ -29,8 +29,9 @@ window.onkeypress = function(event) {
 <p>HTML5 element support</p>
 <p>Add a feature where it can auto generate more than three</p>
 
-# Redirect
+# Redirects
 <p><a href="http://jsonkeypress.rf.gd/">JsOnKeyPress.rf.gd</a> redirects to the page used to generate the script</p>
+<p><a href="http://jsonkeypress.rf.gd/a">JsOnKeyPress.rf.gd/[insert any letter here]</a> --- redirects to the Repository 
 
 # All the letters
 If you want, the code for every letter can be found <a href="https://soaringgecko.github.io/RunJavaScriptOnKeyPress/all-the-letters.html">here</a> (the page also runs the script)
