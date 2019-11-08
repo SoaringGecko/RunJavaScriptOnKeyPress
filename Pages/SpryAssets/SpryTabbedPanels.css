@@ -89,7 +89,8 @@
  * and exits the container.
  */
 .TabbedPanelsTabHover {
-	background-color: #999;
+	background-color: #b5e853;
+	color:#020202;
 }
 
 /* This selector is an example of how to change the appearance of a tab button
@@ -104,7 +105,8 @@
  * content panel so that it looks like the tab is part of the content panel.
  */
 .TabbedPanelsTabSelected {
-	background-color: #999;
+	background-color: #b5e853;
+	color:#020202;
 	border-bottom: 1px solid #EEE;
 }
 
