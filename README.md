@@ -11,7 +11,7 @@
 <p>If you want to use this just go <a href="https://soaringgecko.github.io/RunJavaScriptOnKeyPress/Pages/">here</a> and follow the instructions</p>
 
 # Updates
-<p><b>2.0 —</b> It can now  generate 3</p>
+<p><b>2.6 —</b> It can now  generate 6</p>
 
 # How do I put more then one on a page
 <p>If you want to use more then one on a page you will have to stylelive it like this: <pre>&lt;script&gt;
@@ -27,7 +27,7 @@ window.onkeypress = function(event) {
 
 # What kind of improvements are you planning on making?
 <p>HTML5 element support</p>
-<p>Add a feature where it can auto generate more than three</p>
+<p>Add a feature where it can auto generate more than six</p>
 
 # Redirects
 <p><a href="http://jsonkeypress.rf.gd/">JsOnKeyPress.rf.gd</a> redirects to the page used to generate the script</p>

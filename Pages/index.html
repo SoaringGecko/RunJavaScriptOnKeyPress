@@ -17,9 +17,12 @@
 <p>1. Paste your JavaScript you want to run (If you want more then one generated select another tab and paste your JavaScript for the 2nd keybind in the new box):</p>
 <div id="TabbedPanels2" class="TabbedPanels">
   <ul class="TabbedPanelsTabGroup">
-    <li class="TabbedPanelsTab" tabindex="0"> 1</li>
-    <li class="TabbedPanelsTab" tabindex="0"> 2</li>
-    <li class="TabbedPanelsTab" tabindex="0"> 3</li>
+    <li class="TabbedPanelsTab" tabindex="0">1</li>
+    <li class="TabbedPanelsTab" tabindex="0">2</li>
+    <li class="TabbedPanelsTab" tabindex="0">3</li>
+    <li class="TabbedPanelsTab" tabindex="0">4</li>
+    <li class="TabbedPanelsTab" tabindex="0">5</li>
+    <li class="TabbedPanelsTab" tabindex="0">6</li>
   </ul>
   <div class="TabbedPanelsContentGroup">
     <div class="TabbedPanelsContent">
@@ -31,15 +34,27 @@
     <div class="TabbedPanelsContent">
       <textarea name="myText" cols="100" rows="4" id="myText3" type="text"></textarea>
     </div>
+    <div class="TabbedPanelsContent">
+      <textarea name="myText" cols="100" rows="4" id="myText4" type="text"></textarea>
+    </div>
+    <div class="TabbedPanelsContent">
+      <textarea name="myText" cols="100" rows="4" id="myText5" type="text"></textarea>
+    </div>
+    <div class="TabbedPanelsContent">
+      <textarea name="myText" cols="100" rows="4" id="myText6" type="text"></textarea>
+    </div>
   </div>
 </div>
 <p>2. Select how many of the above boxes you used</p>
 <ul id="MenuBar1" class="MenuBarHorizontal">
-  <li><a class="MenuBarItemSubmenu" href="#">How many?</a>
+  <li><a class="MenuBarItemSubmenu" onclick="myFunction1()">How many?</a>
     <ul>
       <li><a onclick="myFunction1()">1</a></li>
       <li><a onclick="myFunction1(); myFunction2();">2</a></li>
       <li><a onclick="myFunction1(); myFunction2(); myFunction3();">3</a></li>
+      <li><a onclick="myFunction1(); myFunction2(); myFunction3(); myFunction6();">4</a></li>
+      <li><a onclick="myFunction1(); myFunction2(); myFunction3(); myFunction6(); myFunction8();">5</a></li>
+      <li><a onclick="myFunction1(); myFunction2(); myFunction3(); myFunction6(); myFunction8(); myFunction10();">6</a></li>
     </ul>
   </li>
 </ul>
@@ -47,9 +62,12 @@
 <p>3. Input the charater you want to activate the JS here:</p>
 <div id="TabbedPanels1" class="TabbedPanels">
   <ul class="TabbedPanelsTabGroup">
-    <li class="TabbedPanelsTab" tabindex="0"> 1</li>
-    <li class="TabbedPanelsTab" tabindex="0"> 2</li>
-    <li class="TabbedPanelsTab" tabindex="0"> 3</li>
+    <li class="TabbedPanelsTab" tabindex="0">1</li>
+    <li class="TabbedPanelsTab" tabindex="0">2</li>
+    <li class="TabbedPanelsTab" tabindex="0">3</li>
+    <li class="TabbedPanelsTab" tabindex="0">4</li>
+    <li class="TabbedPanelsTab" tabindex="0">5</li>
+    <li class="TabbedPanelsTab" tabindex="0">6</li>
   </ul>
   <div class="TabbedPanelsContentGroup">
     <div class="TabbedPanelsContent">
@@ -60,6 +78,15 @@
     </div>
     <div class="TabbedPanelsContent">
       <input type="text" size="20" maxlength="1" onkeypress="myFunction5(event)" />
+    </div>
+    <div class="TabbedPanelsContent">
+      <input type="text" size="20" maxlength="1" onkeypress="myFunction7(event)" />
+    </div>
+    <div class="TabbedPanelsContent">
+      <input type="text" size="20" maxlength="1" onkeypress="myFunction9(event)" />
+    </div>
+    <div class="TabbedPanelsContent">
+      <input type="text" size="20" maxlength="1" onkeypress="myFunction11(event)" />
     </div>
   </div>
 </div>
@@ -72,6 +99,9 @@ window.onkeypress = function(event) {
    }
 <span id="demo2"></span>
 <span id="demo3"></span>
+<span id="demo4"></span>
+<span id="demo5"></span>
+<span id="demo6"></span>
 }
 &lt;/script&gt;
 </pre>
@@ -101,6 +131,18 @@ function myFunction5(event) {
   var x = event.which || event.keyCode;
   document.getElementById("demo-3").innerHTML = "" + x;
 }
+function myFunction7(event) {
+  var x = event.which || event.keyCode;
+  document.getElementById("demo-4").innerHTML = "" + x;
+}
+function myFunction9(event) {
+  var x = event.which || event.keyCode;
+  document.getElementById("demo-5").innerHTML = "" + x;
+}
+function myFunction11(event) {
+  var x = event.which || event.keyCode;
+  document.getElementById("demo-6").innerHTML = "" + x;
+}
 </script> 
 <script>
 function myFunction1() {
@@ -114,6 +156,18 @@ function myFunction2() {
 function myFunction3() {
   var x = document.getElementById("myText3").value;
   document.getElementById("demo3").innerHTML = "<br/>   if (event.keyCode == <span id='demo-3'></span>) {<br/>" + x + "<br/>   }";
+}
+function myFunction6() {
+  var x = document.getElementById("myText4").value;
+  document.getElementById("demo4").innerHTML = "<br/>   if (event.keyCode == <span id='demo-4'></span>) {<br/>" + x + "<br/>   }";
+}
+function myFunction8() {
+  var x = document.getElementById("myText5").value;
+  document.getElementById("demo5").innerHTML = "<br/>   if (event.keyCode == <span id='demo-5'></span>) {<br/>" + x + "<br/>   }";
+}
+function myFunction10() {
+  var x = document.getElementById("myText6").value;
+  document.getElementById("demo6").innerHTML = "<br/>   if (event.keyCode == <span id='demo-6'></span>) {<br/>" + x + "<br/>   }";
 }
 var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
 var TabbedPanels2 = new Spry.Widget.TabbedPanels("TabbedPanels2");
