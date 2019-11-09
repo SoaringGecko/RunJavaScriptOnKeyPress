@@ -23,6 +23,9 @@
     <li class="TabbedPanelsTab" tabindex="0">4</li>
     <li class="TabbedPanelsTab" tabindex="0">5</li>
     <li class="TabbedPanelsTab" tabindex="0">6</li>
+    <li class="TabbedPanelsTab" tabindex="0">7</li>
+    <li class="TabbedPanelsTab" tabindex="0">8</li>
+    <li class="TabbedPanelsTab" tabindex="0">9</li>
   </ul>
   <div class="TabbedPanelsContentGroup">
     <div class="TabbedPanelsContent">
@@ -43,6 +46,15 @@
     <div class="TabbedPanelsContent">
       <textarea name="myText" cols="100" rows="4" id="myText6" type="text"></textarea>
     </div>
+    <div class="TabbedPanelsContent">
+      <textarea name="myText" cols="100" rows="4" id="myText7" type="text"></textarea>
+    </div>
+    <div class="TabbedPanelsContent">
+      <textarea name="myText" cols="100" rows="4" id="myText8" type="text"></textarea>
+    </div>
+    <div class="TabbedPanelsContent">
+      <textarea name="myText" cols="100" rows="4" id="myText9" type="text"></textarea>
+    </div>
   </div>
 </div>
 <p>2. Select how many of the above boxes you used</p>
@@ -55,6 +67,9 @@
       <li><a onclick="myFunction1(); myFunction2(); myFunction3(); myFunction6();">4</a></li>
       <li><a onclick="myFunction1(); myFunction2(); myFunction3(); myFunction6(); myFunction8();">5</a></li>
       <li><a onclick="myFunction1(); myFunction2(); myFunction3(); myFunction6(); myFunction8(); myFunction10();">6</a></li>
+      <li><a onclick="myFunction1(); myFunction2(); myFunction3(); myFunction6(); myFunction8(); myFunction10(); myFunction12();">7</a></li>
+      <li><a onclick="myFunction1(); myFunction2(); myFunction3(); myFunction6(); myFunction8(); myFunction10(); myFunction12(); myFunction14();">8</a></li>
+      <li><a onclick="myFunction1(); myFunction2(); myFunction3(); myFunction6(); myFunction8(); myFunction10(); myFunction12(); myFunction14(); myFunction16();">9</a></li>
     </ul>
   </li>
 </ul>
@@ -68,6 +83,9 @@
     <li class="TabbedPanelsTab" tabindex="0">4</li>
     <li class="TabbedPanelsTab" tabindex="0">5</li>
     <li class="TabbedPanelsTab" tabindex="0">6</li>
+    <li class="TabbedPanelsTab" tabindex="0">7</li>
+    <li class="TabbedPanelsTab" tabindex="0">8</li>
+    <li class="TabbedPanelsTab" tabindex="0">9</li>
   </ul>
   <div class="TabbedPanelsContentGroup">
     <div class="TabbedPanelsContent">
@@ -88,6 +106,15 @@
     <div class="TabbedPanelsContent">
       <input type="text" size="20" maxlength="1" onkeypress="myFunction11(event)" />
     </div>
+    <div class="TabbedPanelsContent">
+      <input type="text" size="20" maxlength="1" onkeypress="myFunction13(event)" />
+    </div>
+    <div class="TabbedPanelsContent">
+      <input type="text" size="20" maxlength="1" onkeypress="myFunction15(event)" />
+    </div>
+    <div class="TabbedPanelsContent">
+      <input type="text" size="20" maxlength="1" onkeypress="myFunction17(event)" />
+    </div>
   </div>
 </div>
 <p>Now just copy and paste this into your pages code:</p>
@@ -97,12 +124,7 @@ window.onkeypress = function(event) {
    if (event.keyCode == <span id="demo-1"></span>) {
 <span id="demo1"></span>
    }
-<span id="demo2"></span>
-<span id="demo3"></span>
-<span id="demo4"></span>
-<span id="demo5"></span>
-<span id="demo6"></span>
-}
+<span id="demo2"></span><span id="demo3"></span><span id="demo4"></span><span id="demo5"></span><span id="demo6"></span><span id="demo7"></span><span id="demo8"></span><span id="demo9"></span>}
 &lt;/script&gt;
 </pre>
 </p>
@@ -118,57 +140,8 @@ window.onkeypress = function(event) {
   color: #020202;
 }
 </style>
+<script type="text/javascript" src="https://soaringgecko.github.io/RunJavaScriptOnKeyPress/generators.js"></script> 
 <script>
-function myFunction(event) {
-  var x = event.which || event.keyCode;
-  document.getElementById("demo-1").innerHTML = "" + x;
-}
-function myFunction4(event) {
-  var x = event.which || event.keyCode;
-  document.getElementById("demo-2").innerHTML = "" + x;
-}
-function myFunction5(event) {
-  var x = event.which || event.keyCode;
-  document.getElementById("demo-3").innerHTML = "" + x;
-}
-function myFunction7(event) {
-  var x = event.which || event.keyCode;
-  document.getElementById("demo-4").innerHTML = "" + x;
-}
-function myFunction9(event) {
-  var x = event.which || event.keyCode;
-  document.getElementById("demo-5").innerHTML = "" + x;
-}
-function myFunction11(event) {
-  var x = event.which || event.keyCode;
-  document.getElementById("demo-6").innerHTML = "" + x;
-}
-</script> 
-<script>
-function myFunction1() {
-  var x = document.getElementById("myText1").value;
-  document.getElementById("demo1").innerHTML = x;
-}
-function myFunction2() {
-  var x = document.getElementById("myText2").value;
-  document.getElementById("demo2").innerHTML = "<br/>   if (event.keyCode == <span id='demo-2'></span>) {<br/>" + x + "<br/>   }";
-}
-function myFunction3() {
-  var x = document.getElementById("myText3").value;
-  document.getElementById("demo3").innerHTML = "<br/>   if (event.keyCode == <span id='demo-3'></span>) {<br/>" + x + "<br/>   }";
-}
-function myFunction6() {
-  var x = document.getElementById("myText4").value;
-  document.getElementById("demo4").innerHTML = "<br/>   if (event.keyCode == <span id='demo-4'></span>) {<br/>" + x + "<br/>   }";
-}
-function myFunction8() {
-  var x = document.getElementById("myText5").value;
-  document.getElementById("demo5").innerHTML = "<br/>   if (event.keyCode == <span id='demo-5'></span>) {<br/>" + x + "<br/>   }";
-}
-function myFunction10() {
-  var x = document.getElementById("myText6").value;
-  document.getElementById("demo6").innerHTML = "<br/>   if (event.keyCode == <span id='demo-6'></span>) {<br/>" + x + "<br/>   }";
-}
 var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
 var TabbedPanels2 = new Spry.Widget.TabbedPanels("TabbedPanels2");
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
