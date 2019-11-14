@@ -117,9 +117,19 @@
     </div>
   </div>
 </div>
+<br/>
+<ul id="MenuBar2" class="MenuBarHorizontal">
+  <li><a class="MenuBarItemSubmenu" onclick="myFunctionj()">Add jQuery</a>
+    <ul>
+      <li><a onclick="myFunctionj()">Add jQuery</a></li>
+      <li><a onclick="myFunctionh()">Add howler.js</a></li>
+    </ul>
+  </li>
+</ul>
+<p>&nbsp;</p>
 <p>Now just copy and paste this into your pages code:</p>
 <p>
-<pre>&lt;script&gt;
+<pre><span id="demojh"></span>&lt;script&gt;
 window.onkeypress = function(event) {
    if (event.keyCode == <span id="demo-1"></span>) {
 <span id="demo1"></span>
@@ -142,6 +152,16 @@ window.onkeypress = function(event) {
 </style>
 <script type="text/javascript" src="https://soaringgecko.github.io/RunJavaScriptOnKeyPress/generators.js"></script> 
 <script>
+function myFunctionj() {
+  var x = document.getElementById("demojh").innerHTML = "&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js&quot;&gt; &lt;/script&gt;<br/>";
+  
+}
+function myFunctionh() {
+  var x = document.getElementById("demojh").innerHTML = "&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.2/howler.js&quot;</span>&gt;&lt;/script&gt;<br/>";
+  
+}
+</script>
+<script>
 var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
 var TabbedPanels2 = new Spry.Widget.TabbedPanels("TabbedPanels2");
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
@@ -151,6 +171,7 @@ var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenu
 if (screen.width <= 699) {
 document.location = "m";
 }
+var MenuBar2 = new Spry.Widget.MenuBar("MenuBar2", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
 //-->
 </script>
 </body>
