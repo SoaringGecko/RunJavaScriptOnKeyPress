@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="/RunJavaScriptOnKeyPress/assets/css/style.css?v=45e0bbafbd04e5eb3875e817bff9edf41552c081">
 <link rel="stylecheet" href="https://soaringgecko.github.io/RunJavaScriptOnKeyPress/highlight.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/RunJavaScriptOnKeyPress/highlight.css" rel="stylesheet" type="text/css" />
 <p>Automatically generates a thing to run JavaScript on a specific key-press</p>
 
 # Why I made this
