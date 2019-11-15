@@ -1,8 +1,16 @@
-a::selection, p::selection {
-  background: #b5e853; /* WebKit/Blink Browsers */
-  color: #020202;
+*::selection, p::selection {
+	background: #b5e853; /* WebKit/Blink Browsers */
+	color: #020202;
 }
-a::-moz-selection, p::-moz-selection {
-  background: #b5e853; /* Gecko Browsers */
-  color: #020202;
+*::-moz-selection, p::-moz-selection {
+ background: #b5e853; /* Gecko Browsers */
+ color: #020202;
+}
+.TabbedPanelsTabHover::selection, a.MenuBarItemSubmenuHover::selection, a.MenuBarItemHover::selection {
+  background: #020202; /* WebKit/Blink Browsers */
+  color: #b5e853;
+}
+.TabbedPanelsTabHover::-moz-selection, a.MenuBarItemSubmenuHover, a.MenuBarItemHover {
+  background: #020202; /* Gecko Browsers */
+  color: #b5e853;
 }

@@ -11,6 +11,7 @@
 <p>If you want to use this just go <a href="https://soaringgecko.github.io/RunJavaScriptOnKeyPress/Pages/">here</a> and follow the instructions</p>
 
 # Updates
+<p><b>3.1 —</b> Slight css changes</p>
 <p><b>3.0 —</b> It can now automatically link jQuery and howler.js</p>
 <p><b>2.9 —</b> It can now  generate 9</p>
 
