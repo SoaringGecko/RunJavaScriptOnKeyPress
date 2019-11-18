@@ -6,7 +6,7 @@
  background: #b5e853; /* Gecko Browsers */
  color: #020202;
 }
-.TabbedPanelsTabHover::selection, a.MenuBarItemSubmenuHover::selection, a.MenuBarItemHover::selection, button::selection {
+.TabbedPanelsTabHover::selection, a.MenuBarItemSubmenuHover::selection, a.MenuBarItemHover::selection, button:hover::selection {
   background: #020202; /* WebKit/Blink Browsers */
   color: #b5e853;
 }
