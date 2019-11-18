@@ -7,7 +7,8 @@
 <link rel="stylesheet" href="/RunJavaScriptOnKeyPress/assets/css/style.css?v=45e0bbafbd04e5eb3875e817bff9edf41552c081">
 <link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
 <link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
-<link href="/RunJavaScriptOnKeyPress/highlight.css" rel="stylesheet" type="text/css" />
+<link href="https://soaringgecko.github.io/RunJavaScriptOnKeyPress/highlight.css" rel="stylesheet" type="text/css" />
+<link href="../buttons.css" rel="stylesheet" type="text/css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
@@ -130,7 +131,7 @@
 <p>&nbsp;</p>
 <p>Now just copy and paste this into your pages code:</p>
 <p>
-<pre><span id="demojh"></span>&lt;script&gt;
+<pre id="p1"><span id="demojh"></span>&lt;script&gt;
 window.onkeypress = function(event) {
    if (event.keyCode == <span id="demo-1"></span>) {
 <span id="demo1"></span>
@@ -139,6 +140,7 @@ window.onkeypress = function(event) {
 &lt;/script&gt;
 </pre>
 </p>
+<button onclick="copyToClipboard('#p1')">Copy JS</button>
 <hr/>
 <p><a href="https://soaringgecko.github.io/RunJavaScriptOnKeyPress">Main page</a></p>
 <script type="text/javascript" src="https://soaringgecko.github.io/RunJavaScriptOnKeyPress/generators.js"></script> 
@@ -164,6 +166,22 @@ document.location = "m";
 }
 var MenuBar2 = new Spry.Widget.MenuBar("MenuBar2", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
 //-->
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+<script>
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+
+window.onkeypress = function(event) {
+   if (event.keyCode == 67) {
+copyToClipboard.p1()
+   }
+}
 </script>
 </body>
 </html>
