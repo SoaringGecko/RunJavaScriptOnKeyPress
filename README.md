@@ -30,7 +30,7 @@ window.onkeypress = function(event) {
 &lt;/script&gt;</pre></p>
 
 # What kind of improvements are you planning on making?
-<p>HTML5 element support (currently if you want to do so use <a href="https://www.web2generators.com/html-based-tools/online-html-entities-encoder-and-decoder">this)</a></p>
+<p>HTML5 element support (currently if you want to do so use <a href="https://www.web2generators.com/html-based-tools/online-html-entities-encoder-and-decoder">this</a>)</p>
 
 # Redirects
 <p><a href="http://jsonkeypress.rf.gd/">JsOnKeyPress.rf.gd</a> redirects to the page used to generate the script</p>
