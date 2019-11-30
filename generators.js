@@ -1,3 +1,34 @@
+function Reset() {
+	  var x = document.getElementById("myText1").value;
+  document.getElementById("demo1").innerHTML = "";
+  
+  var x = document.getElementById("myText2").value;
+  document.getElementById("demo2").innerHTML = "";
+  
+  var x = document.getElementById("myText3").value;
+  document.getElementById("demo3").innerHTML = "";
+
+  var x = document.getElementById("myText4").value;
+  document.getElementById("demo4").innerHTML = "";
+
+  var x = document.getElementById("myText5").value;
+  document.getElementById("demo5").innerHTML = "";
+
+  var x = document.getElementById("myText6").value;
+  document.getElementById("demo6").innerHTML = "";
+
+  var x = document.getElementById("myText7").value;
+  document.getElementById("demo7").innerHTML = "";
+
+  var x = document.getElementById("myText8").value;
+  document.getElementById("demo8").innerHTML = "";
+
+  var x = document.getElementById("myText9").value;
+  document.getElementById("demo9").innerHTML = "";
+}
+function Reset1() {
+	  var x = document.getElementById("demojh").innerHTML = "";
+}
 function myFunction(event) {
   var x = event.which || event.keyCode;
   document.getElementById("demo-1").innerHTML = "" + x;

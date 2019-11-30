@@ -63,13 +63,13 @@
 <ul id="MenuBar1" class="MenuBarHorizontal">
   <li><a class="MenuBarItemSubmenu" onclick="myFunction1()">How many?</a>
     <ul>
-      <li><a onclick="myFunction1()">1</a></li>
-      <li><a onclick="myFunction1(); myFunction2();">2</a></li>
-      <li><a onclick="myFunction1(); myFunction2(); myFunction3();">3</a></li>
-      <li><a onclick="myFunction1(); myFunction2(); myFunction3(); myFunction6();">4</a></li>
-      <li><a onclick="myFunction1(); myFunction2(); myFunction3(); myFunction6(); myFunction8();">5</a></li>
-      <li><a onclick="myFunction1(); myFunction2(); myFunction3(); myFunction6(); myFunction8(); myFunction10();">6</a></li>
-      <li><a onclick="myFunction1(); myFunction2(); myFunction3(); myFunction6(); myFunction8(); myFunction10(); myFunction12();">7</a></li>
+      <li><a onclick="Reset(); myFunction1()">1</a></li>
+      <li><a onclick="Reset(); myFunction1(); myFunction2();">2</a></li>
+      <li><a onclick="Reset(); myFunction1(); myFunction2(); myFunction3();">3</a></li>
+      <li><a onclick="Reset(); myFunction1(); myFunction2(); myFunction3(); myFunction6();">4</a></li>
+      <li><a onclick="Reset(); myFunction1(); myFunction2(); myFunction3(); myFunction6(); myFunction8();">5</a></li>
+      <li><a onclick="Reset(); myFunction1(); myFunction2(); myFunction3(); myFunction6(); myFunction8(); myFunction10();">6</a></li>
+      <li><a onclick="Reset(); myFunction1(); myFunction2(); myFunction3(); myFunction6(); myFunction8(); myFunction10(); myFunction12();">7</a></li>
       <li><a onclick="myFunction1(); myFunction2(); myFunction3(); myFunction6(); myFunction8(); myFunction10(); myFunction12(); myFunction14();">8</a></li>
       <li><a onclick="myFunction1(); myFunction2(); myFunction3(); myFunction6(); myFunction8(); myFunction10(); myFunction12(); myFunction14(); myFunction16();">9</a></li>
     </ul>
@@ -125,10 +125,12 @@
     <ul>
       <li><a onclick="myFunctionj()">Add jQuery</a></li>
       <li><a onclick="myFunctionh()">Add howler.js</a></li>
+      <li><a onclick="Reset1()">Remove linked files</a></li>
     </ul>
   </li>
 </ul>
 <p>&nbsp;</p>
+<button onclick="Reset()">Reset</button>
 <p>Now just copy and paste this into your pages code:</p>
 <p>
 <pre id="p1"><span id="demojh"></span>&lt;script&gt;
@@ -175,12 +177,6 @@ function copyToClipboard(element) {
   $temp.val($(element).text()).select();
   document.execCommand("copy");
   $temp.remove();
-}
-
-window.onkeypress = function(event) {
-   if (event.keyCode == 67) {
-copyToClipboard.p1()
-   }
 }
 </script>
 </body>
