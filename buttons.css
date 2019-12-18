@@ -3,8 +3,16 @@
 button {
 	background-color: #020202 ;
 	color: #b5e853 ;
+	border-radius: 12px
 }
+
 button:hover {
 	background-color: #b5e853;
 	color: #020202;
+}
+
+fieldset {
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
 }
