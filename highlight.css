@@ -14,3 +14,7 @@
   background: #020202; /* Gecko Browsers */
   color: #b5e853;
 }
+
+textarea:focus {
+  outline: #b5e853;
+}
