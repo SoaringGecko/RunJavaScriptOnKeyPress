@@ -11,6 +11,10 @@ button:hover {
 	color: #020202;
 }
 
+button:focus {
+  outline: none;
+}
+
 fieldset {
 -webkit-border-radius: 8px;
 -moz-border-radius: 8px;
