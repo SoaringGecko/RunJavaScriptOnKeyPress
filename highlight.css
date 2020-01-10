@@ -16,5 +16,9 @@
 }
 
 textarea:focus {
-  outline: #b5e853;
+  outline: none;
+}
+
+input:focus {
+  outline: none;
 }
