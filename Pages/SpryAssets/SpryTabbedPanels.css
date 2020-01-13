@@ -131,6 +131,7 @@
  */
 .TabbedPanelsContentGroup {
 	clear: both;
+	border: none;
 	border-left: solid 1px #CCC;
 	border-bottom: solid 1px #CCC;
 	border-top: solid 1px #999;
