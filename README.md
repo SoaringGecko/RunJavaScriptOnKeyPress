@@ -12,10 +12,10 @@
 <p>If you want to use this just go <a href="https://soaringgecko.github.io/RunJavaScriptOnKeyPress/Pages/">here</a> and follow the instructions</p>
 
 # Updates
+<p><b>4.0 —</b> You can now use HTML5 in the JS</p>
 <p><b>3.3 —</b> Adds a reset  button, will now remove any # above the one selected, can remove linked files</p>
 <p><b>3.2 —</b> Adds a Copy button and slight CSS3 changes</p>
 <p><b>3.1 —</b> Slight CSS3 changes</p>
-<p><b>3.0 —</b> It can now automatically link jQuery and howler.js</p>
 
 # How do I put more then one on a page
 <p>If you want to use more then one on a page you will have to stylelive it like this: <pre>&lt;script&gt;
