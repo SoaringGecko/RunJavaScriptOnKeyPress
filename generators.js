@@ -73,6 +73,12 @@ function myFunction1() {
   var x = document.getElementById("myText1").value;
   document.getElementById("demo1").innerHTML = x;
 }
+
+function myFunction1test() {
+var x = document.getElementById("myText1").value;
+  document.getElementById("demo1").innerHTML = x;
+}
+
 function myFunction2() {
   var x = document.getElementById("myText2").value;
   document.getElementById("demo2").innerHTML = "<br/>   if (event.keyCode == <span id='demo-2'></span>) {<br/>" + x + "<br/>   }<br/>";
