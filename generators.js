@@ -76,7 +76,7 @@ function myFunction1() {
 
 function myFunction1test() {
 var x = document.getElementById("myText1").value;
-  document.getElementById("demo1").innerHTML = "<? echo htmlentities($str);?>";
+  document.getElementById("demo1").innerHTML = "<? echo htmlentities($result1);?>";
 }
 
 function myFunction2() {
