@@ -75,37 +75,37 @@ function myFunction1() {
 }
 function myFunction2() {
   var x = document.getElementById("myText2").value;
-  document.getElementById("demo2").innerHTML = "<br/>   if (event.keyCode == <span id='demo-2'></span>) {<br/>" + x + "<br/>   }<br/>";
+  document.getElementById("demo2").innerHTML = "<br/>   if (event.keyCode == <xmp id='demo-2'></xmp>) {<br/>" + x + "<br/>   }<br/>";
 }
 function myFunction3() {
   var x = document.getElementById("myText3").value;
-  document.getElementById("demo3").innerHTML = "<br/>   if (event.keyCode == <span id='demo-3'></span>) {<br/>" + x + "<br/>   }<br/>";
+  document.getElementById("demo3").innerHTML = "<br/>   if (event.keyCode == <xmp id='demo-3'></xmp>) {<br/>" + x + "<br/>   }<br/>";
 }
 function myFunction6() {
   var x = document.getElementById("myText4").value;
-  document.getElementById("demo4").innerHTML = "<br/>   if (event.keyCode == <span id='demo-4'></span>) {<br/>" + x + "<br/>   }<br/>";
+  document.getElementById("demo4").innerHTML = "<br/>   if (event.keyCode == <xmp id='demo-4'></xmp>) {<br/>" + x + "<br/>   }<br/>";
 }
 function myFunction8() {
   var x = document.getElementById("myText5").value;
-  document.getElementById("demo5").innerHTML = "<br/>   if (event.keyCode == <span id='demo-5'></span>) {<br/>" + x + "<br/>   }<br/>";
+  document.getElementById("demo5").innerHTML = "<br/>   if (event.keyCode == <xmp id='demo-5'></xmp>) {<br/>" + x + "<br/>   }<br/>";
 }
 function myFunction10() {
   var x = document.getElementById("myText6").value;
-  document.getElementById("demo6").innerHTML = "<br/>   if (event.keyCode == <span id='demo-6'></span>) {<br/>" + x + "<br/>   }<br/>";
+  document.getElementById("demo6").innerHTML = "<br/>   if (event.keyCode == <xmp id='demo-6'></xmp>) {<br/>" + x + "<br/>   }<br/>";
 }
 function myFunction12() {
   var x = document.getElementById("myText7").value;
-  document.getElementById("demo7").innerHTML = "<br/>   if (event.keyCode == <span id='demo-7'></span>) {<br/>" + x + "<br/>   }<br/>";
+  document.getElementById("demo7").innerHTML = "<br/>   if (event.keyCode == <xmp id='demo-7'></xmp>) {<br/>" + x + "<br/>   }<br/>";
 }
 function myFunction14() {
   var x = document.getElementById("myText8").value;
-  document.getElementById("demo8").innerHTML = "<br/>   if (event.keyCode == <span id='demo-8'></span>) {<br/>" + x + "<br/>   }<br/>";
+  document.getElementById("demo8").innerHTML = "<br/>   if (event.keyCode == <xmp id='demo-8'></xmp>) {<br/>" + x + "<br/>   }<br/>";
 }
 function myFunction16() {
   var x = document.getElementById("myText9").value;
-  document.getElementById("demo9").innerHTML = "<br/>   if (event.keyCode == <span id='demo-9'></span>) {<br/>" + x + "<br/>   }<br/>";
+  document.getElementById("demo9").innerHTML = "<br/>   if (event.keyCode == <xmp id='demo-9'></xmp>) {<br/>" + x + "<br/>   }<br/>";
 }
 function myFunction18() {
   var x = document.getElementById("myText10").value;
-  document.getElementById("demo10").innerHTML = "<br/>   if (event.keyCode == <span id='demo-10'></span>) {<br/>" + x + "<br/>   }<br/>";
+  document.getElementById("demo10").innerHTML = "<br/>   if (event.keyCode == <xmp id='demo-10'></xmp>) {<br/>" + x + "<br/>   }<br/>";
 }
