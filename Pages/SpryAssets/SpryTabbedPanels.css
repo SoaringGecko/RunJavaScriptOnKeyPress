@@ -150,6 +150,8 @@
 .TabbedPanelsContent {
 	overflow: hidden;
 	padding: 4px;
+	display: inline; /* the default for span */
+	width: 100px;
 }
 
 /* This selector is an example of how to change the appearnce of the currently
