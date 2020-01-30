@@ -153,6 +153,7 @@
 	width: -webkit-fit-content;
 	width: -moz-fit-content;
 	width: fit-content;
+	margin: 1em auto;
 }
 
 /* This selector is an example of how to change the appearnce of the currently
