@@ -136,7 +136,6 @@
 	border-top: solid 1px #999;
 	border-right: solid 1px #999;
 	background-color: #020202;
-	display: inline; /* the default for span */
 }
 
 /* This is the selector for the Content panel. The Content panel holds the
