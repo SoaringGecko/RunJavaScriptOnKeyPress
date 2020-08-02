@@ -10,6 +10,7 @@
 
 # How do I use it?
 <p>If you want to use this just go <a href="https://soaringgecko.github.io/RunJavaScriptOnKeyPress/Pages/">here</a> and follow the instructions</p>
+<p>If there is a key you want to use like <b>Caps Lock</b> that doesn't show up when pressed <a href="https://wangchujiang.com/hotkeys/">this</a> may be helpful</p> 
 
 # Updates
 <p><b>5.0 —</b> This update adds pages that will generate JS for every letter (lower and upper case) and number key they can be accessed from the bottom of <a href="Pages">this page</a></p>
