@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="/RunJavaScriptOnKeyPress/highlight.css" rel="stylesheet" type="text/css" />
 
-### I really need to improve this thing, and maybe I will soon(er or later, not sure how soon)
+### I really need to improve this thing, and maybe I will soon(It is currently being worked on, I'm remaking it from the ground up because the current one is a bit of a mess and adding some new features)
 
 <p>Automatically generates a thing to run JavaScript on a specific key-press</p>
 
