@@ -1,0 +1,219 @@
+<html>
+
+<head>
+    <title>RunJavaScriptOnKeyPress</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <div id="externalJScustom" style="width: 100%; height: 100%; background-color: rgba(70, 70, 70, 0.384); position: fixed; z-index: 3; display: none;">
+        <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
+            <p style="text-align: center; font-size: 2vw;">Enter link to js file</p>
+            <input style="outline: none;" type="text" name="externalJScustomLink" id="externalJScustomLink" value="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+            <button onclick="externalJScustomLink();">Add external js file</button>
+            <button onclick="externalJScustomLinkClose();">Cancel</button>
+        </div>
+
+    </div>
+
+    <div style="width: 100%; text-align: center;">
+        <h1>RunJavaScriptOnKeyPress</h1>
+    </div>
+    <div style="border: solid; width: 100%; text-align: center;">
+        <h2>Put your JS here</h2>
+        <div style="text-align: left; padding: 8px;">
+            <div style="text-align: left; background-color: lightgray;">
+                <button id="addButton">+</button>
+            </div>
+            <div id="div1" style="border: solid; text-align: left;">
+                <p id='keyCodeu1' contenteditable='true' style='outline: none'>alert('hello world');</p>
+            </div>
+            <br>
+        </div>
+        <h2>Input key you want to trigger JS (matched up with the number above)</h2>
+        <div style="text-align: left; padding: 8px;">
+            <div style="text-align: left; background-color: lightgray;">
+                <button id="addButton1">+</button>
+            </div>
+            <div id="divl1" style="border: solid; text-align: left;">
+                <input type="text" size="20" maxlength="1" style="width: 100%;" onkeypress="keyCode(event);">
+            </div>
+            <br>
+        </div>
+
+        <div onselectstart="return false" ondragstart="return false" id="externalJS" style="width: fit-content; border: solid; margin: 8px; padding: 3px;">
+            <p style="cursor: default;">Add external JavaScript</p>
+            <div id="externalJS2" style="border-top: solid; width: 100%; transform-origin: top;">
+                <p onclick="externalJSq(1)">jQuery</p>
+                <p onclick="externalJSq(2)">Howler.js</p>
+                <p onclick="externalJSq(3)">Enter-Full-Screen.js</p>
+                <p onclick="externalJScustom()">Custom</p>
+                <p onclick="externalJSq(4)">Remove</p>
+            </div>
+        </div>
+        <br>
+
+        <div style="text-align: left; margin: 8px;"><button onclick="keyCodel();">Generate JS</button></div>
+
+        <!--xmp-->
+
+        <div id="outputJS1" style="text-align: left;">
+            <pre id="p1"><span id="externalJSl"></span>
+&lt;script&gt;
+            window.onkeypress = function(event) {
+                if (event.keyCode == <span id="keyCode1"></span>) {
+             <span id="keyCodel1"></span>
+ 
+                }
+             }
+            </pre>
+        </div>
+        <div style="text-align: left;">
+            <span id="outputJSB" style="font-family: monospace;">&lt;/script&gt;</span>
+        </div>
+        <br>
+        <footer>
+            <p>The CSS was partially generated with <b><a target="_blank" style="color: #008a96;" href="https://nighteye.app/dark-css-generator/">Night Eye<img src="logo-512x512.webp" alt="Night Eye logo" height="17px"></a></b></p>
+        </footer>
+    </div>
+
+    <script>
+        var i = 1;
+        var u = 1;
+        var t = 1;
+        $("#addButton").click(function() {
+            $("#addButton").before("<button id='button" + i + "' onclick='changeDiv(" + i + ");btnColor(e)'>" + i + "</button>");
+            $("#div1").after("<div id='div" + i + "' style='border: solid; text-align: left; display: none;'><p id='keyCodeu" + i + "' contenteditable='true' style='outline: none' onkeypress='keyCodel()'>alert('hello world');</p></div>");
+            $("#outputJSB").before(`
+        <div id="outputJS` + i + `" style="text-align: left;">
+            <pre id="p1"><span id="externalJSl"></span>
+            window.onkeypress = function(event) {
+                if (event.keyCode == <span id="keyCode` + i + `"></span>) {
+             <span id="keyCodel` + i + `"></span>
+ 
+                }
+             }</pre></div>`);
+            i++;
+            $("#addButton1").before("<button id='buttonl" + u + "' onclick='changeDivl(" + u + ")'>" + u + "</button>");
+            $("#divl1").after("<div id='divl" + u + "' style='border: solid; text-align: left; display: none;'><input type='text' size='20' maxlength='1' style='width: 100%;' onkeypress='keyCode(event)'></div>");
+            u++;
+        });
+
+        function removeBtn() {
+            if (i > 2) {
+                i--;
+                u--;
+                document.getElementById("button" + i).remove();
+                document.getElementById("div" + i).remove();
+                document.getElementById("buttonl" + u).remove();
+                document.getElementById("divl" + u).remove();
+                document.getElementById("outputJS" + i).remove();
+            }
+        }
+
+        $(document).ready(function() {
+            $("#addButton").before("<button class='curent' id='button" + i + "' onclick='changeDiv(" + i + ")'>" + i + "</button>");
+            $("#addButton").after("<button id='removeButton' onclick='removeBtn();'>x</button>")
+            i++;
+            $("#addButton1").before("<button class='curent' id='buttonl" + u + "' onclick='changeDivl(" + u + ")'>" + u + "</button>");
+            $("#addButton1").after("<button id='removeButton' onclick='removeBtn();'>x</button>")
+            u++;
+        });
+
+        function changeDiv(z) {
+            p = 1;
+            t = z;
+            var dev = document.getElementById("div" + z);
+            do {
+                document.getElementById("div" + p).style.display = "none";
+                document.getElementById("button" + p).classList.remove('curent');
+                p++
+                dev.style.display = "block";
+                document.getElementById("button" + z).classList.add('curent');
+            }
+            while (p <= i);
+        }
+
+        $("#addButton1").click(function() {
+            $("#addButton1").before("<button id='buttonl" + u + "' onclick='changeDivl(" + u + ")'>" + u + "</button>");
+            $("#divl1").after("<div id='divl" + u + "' style='border: solid; text-align: left; display: none;'><input type='text' size='20' maxlength='1' style='width: 100%;' onkeypress='keyCode(event)'></div>");
+            u++;
+            $("#addButton").before("<button id='button" + i + "' onclick='changeDiv(" + i + ");btnColor(e)'>" + i + "</button>");
+            $("#div1").after("<div id='div" + i + "' style='border: solid; text-align: left; display: none;'><p id='keyCodeu" + i + "' contenteditable='true' style='outline: none' onkeypress='keyCodel()'>alert('hello world');</p></div>");
+            $("#outputJSB").before(`
+        <div id="outputJS` + i + `" style="text-align: left;">
+            <pre id="p1"><span id="externalJSl"></span>
+            window.onkeypress = function(event) {
+                if (event.keyCode == <span id="keyCode` + i + `"></span>) {
+             <span id="keyCodel` + i + `"></span>
+ 
+                }
+             }</pre></div>`);
+            i++;
+        });
+
+        function btnColor(e) {
+            e.classList.add('curent');
+        }
+
+        function changeDivl(z) {
+            p = 1;
+            t = z;
+            var dev = document.getElementById("divl" + z);
+            do {
+                document.getElementById("divl" + p).style.display = "none";
+                document.getElementById("buttonl" + p).classList.remove('curent');
+                p++
+                dev.style.display = "block";
+                document.getElementById("buttonl" + z).classList.add('curent');
+            }
+            while (p <= u);
+        }
+
+        function externalJSq(e) {
+            if (e == 1) {
+                document.getElementById("externalJSl").innerHTML = '&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"&gt;&lt;/script&gt;';
+            } else if (e == 2) {
+                document.getElementById("externalJSl").innerHTML = '&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.2/howler.js"&gt;&lt;/script&gt';
+            } else if (e == 3) {
+                document.getElementById("externalJSl").innerHTML = '&lt;script src="https://soaringgecko.github.io/Enter-Full-Screen.js/enter-full-screen.js"&gt;&lt;/script&gt';
+            } else if (e == 4) {
+                document.getElementById("externalJSl").innerHTML = '';
+            }
+        }
+
+        function externalJScustom() {
+            document.getElementById('externalJScustom').style.display = "block";
+        }
+
+        function externalJScustomLink() {
+            var m = document.getElementById('externalJScustomLink').value;
+            document.getElementById("externalJSl").innerHTML = '&lt;script src="' + m + '"&gt;&lt;/script&gt';
+            document.getElementById('externalJScustom').style.display = "none";
+        }
+
+        function externalJScustomLinkClose() {
+            document.getElementById('externalJScustom').style.display = "none";
+        }
+
+        function keyCode(event) {
+            var x = event.which || event.keyCode;
+            document.getElementById("keyCode" + t).innerHTML = x;
+        }
+
+        function keyCodel() {
+            p = 1;
+            do {
+                var x = document.getElementById("keyCodeu" + p).innerHTML;
+                document.getElementById("keyCodel" + p).innerHTML = x;
+                p++
+            }
+            while (p <= u);
+        }
+    </script>
+</body>
+
+</html>
