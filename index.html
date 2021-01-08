@@ -29,7 +29,7 @@
                 <button id="addButton">+</button>
             </div>
             <div id="div1" style="border: solid; text-align: left;">
-                <p id='keyCodeu1' contenteditable='true' style='outline: none'>alert('hello world');</p>
+                <p id='keyCodeu1' contenteditable='true' onclick='changeDiv(1)' style='outline: none'>alert('hello world');</p>
             </div>
             <br>
         </div>
@@ -39,7 +39,7 @@
                 <button id="addButton1">+</button>
             </div>
             <div id="divl1" style="border: solid; text-align: left;">
-                <input type="text" size="20" maxlength="1" style="width: 100%;" onkeypress="keyCode(event);">
+                <input type="text" size="20" maxlength="1" style="width: 100%;" onclick='changeDivl(1)' onkeypress="keyCode(event);">
             </div>
             <br>
         </div>
@@ -86,7 +86,7 @@
         var t = 1;
         $("#addButton").click(function() {
             $("#addButton").before("<button id='button" + i + "' onclick='changeDiv(" + i + ");btnColor(e)'>" + i + "</button>");
-            $("#div1").after("<div id='div" + i + "' style='border: solid; text-align: left; display: none;'><p id='keyCodeu" + i + "' contenteditable='true' style='outline: none' onkeypress='keyCodel()'>alert('hello world');</p></div>");
+            $("#div1").after("<div id='div" + i + "' style='border: solid; text-align: left; display: none;'><p id='keyCodeu" + i + "' contenteditable='true' onclick='changeDiv(" + i + ")' style='outline: none'>alert('hello world');</p></div>");
             $("#outputJSB").before(`
         <div id="outputJS` + i + `" style="text-align: left;">
             <pre id="p1"><span id="externalJSl"></span>
@@ -98,7 +98,7 @@
              }</pre></div>`);
             i++;
             $("#addButton1").before("<button id='buttonl" + u + "' onclick='changeDivl(" + u + ")'>" + u + "</button>");
-            $("#divl1").after("<div id='divl" + u + "' style='border: solid; text-align: left; display: none;'><input type='text' size='20' maxlength='1' style='width: 100%;' onkeypress='keyCode(event)'></div>");
+            $("#divl1").after("<div id='divl" + u + "' style='border: solid; text-align: left; display: none;'><input type='text' size='20' maxlength='1' style='width: 100%;' onclick='changeDivl(" + u + ")' onkeypress='keyCode(event)'></div>");
             u++;
         });
 
@@ -139,10 +139,10 @@
 
         $("#addButton1").click(function() {
             $("#addButton1").before("<button id='buttonl" + u + "' onclick='changeDivl(" + u + ")'>" + u + "</button>");
-            $("#divl1").after("<div id='divl" + u + "' style='border: solid; text-align: left; display: none;'><input type='text' size='20' maxlength='1' style='width: 100%;' onkeypress='keyCode(event)'></div>");
+            $("#divl1").after("<div id='divl" + u + "' style='border: solid; text-align: left; display: none;'><input type='text' size='20' maxlength='1' style='width: 100%;' onclick='changeDivl(" + u + ")' onkeypress='keyCode(event)'></div>");
             u++;
             $("#addButton").before("<button id='button" + i + "' onclick='changeDiv(" + i + ");btnColor(e)'>" + i + "</button>");
-            $("#div1").after("<div id='div" + i + "' style='border: solid; text-align: left; display: none;'><p id='keyCodeu" + i + "' contenteditable='true' style='outline: none' onkeypress='keyCodel()'>alert('hello world');</p></div>");
+            $("#div1").after("<div id='div" + i + "' style='border: solid; text-align: left; display: none;'><p id='keyCodeu" + i + "' contenteditable='true' onclick='changeDiv(" + i + ")' style='outline: none'>alert('hello world');</p></div>");
             $("#outputJSB").before(`
         <div id="outputJS` + i + `" style="text-align: left;">
             <pre id="p1"><span id="externalJSl"></span>
