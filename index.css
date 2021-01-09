@@ -46,7 +46,7 @@ embed[type="application/pdf"] {
 
 html {
     color: rgb(191, 191, 191);
-    background: rgb(31, 31, 31) !important;
+    background: rgb(31, 31, 31);
 }
 
 body {

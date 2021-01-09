@@ -188,16 +188,19 @@
 
         function externalJScustom() {
             document.getElementById('externalJScustom').style.display = "block";
+            document.documentElement.style.backgroundColor = "rgb(46 46 46)";
         }
 
         function externalJScustomLink() {
             var m = document.getElementById('externalJScustomLink').value;
             document.getElementById("externalJSl").innerHTML = '&lt;script src="' + m + '"&gt;&lt;/script&gt';
             document.getElementById('externalJScustom').style.display = "none";
+            document.documentElement.style.backgroundColor = "rgb(31, 31, 31)";
         }
 
         function externalJScustomLinkClose() {
             document.getElementById('externalJScustom').style.display = "none";
+            document.documentElement.style.backgroundColor = "rgb(31, 31, 31)";
         }
 
         function keyCode(event) {
