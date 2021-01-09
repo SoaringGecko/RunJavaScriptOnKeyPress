@@ -14,4 +14,4 @@
 ## Planned Features
 - [ ] Adding the ability to generate for the CTRL, SHIFT, and ALT keys
 - [ ] Generate for the use of multiple keys (using <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND">&&</a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR">||</a>)
-- [ ] Add favicon
+- [x] <s>Add favicon</s>
