@@ -6,7 +6,7 @@
 <p>You can use it <a href="https://soaringgecko.github.io/RunJavaScriptOnKeyPress/">here</a></p>
 
 ## Why ReadME So Bad?
-<p>I haven't had the time to fix it yet</p>
+<p>I haven't had the time to fix it yet (haven't gotten back to it yet)</p>
 
 ## Why Did You Waste Your Time Making This?
 <p>When I made the <a href="https://github.com/SoaringGecko/RunJavaScriptOnKeyPress-Old_Version-">original version</a> I was messing around with triggering JS on keypress a lot and got tired of having to look up the key IDs every time. I remade it because I remember having a lot of fun programming the original and it was well... kinda bad so I decided why not fix it?</p>
