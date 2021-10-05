@@ -2,7 +2,7 @@
 <p>This is the new version of RunJavaScriptOnKeyPress, if you want the original version go <a href="https://github.com/SoaringGecko/RunJavaScriptOnKeyPress-Old_Version-">here</a></p>
 
 ## The Generator
-<p>It is a web based generator (I have tested it on Firefox and Edge, I don't use chrome)</p>
+<p>It is a web based generator (I have tested it on Firefox, Edge, Chrome, Opera, and Brave)</p>
 <p>You can use it <a href="https://soaringgecko.github.io/RunJavaScriptOnKeyPress/">here</a></p>
 
 ## Why ReadME So Bad?
